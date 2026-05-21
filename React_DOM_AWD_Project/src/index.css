@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+/* Enable class-based dark mode */
+@variant dark (&:where(.dark, .dark *));
+
+/* Global styles */
+body {
+  @apply bg-gray-100 text-gray-900 transition-colors duration-300;
+}
+
+.dark body {
+  @apply bg-black text-white;
+}
+
+
+
+
+@theme {
+  --color-brand-text-light: #4a4a4a;
+  --color-brand-text-dark: #a0a0a0;
+}
